@@ -34,6 +34,9 @@
   font-style: normal;
   font-display: swap;
 }
+
+
+
 /* CUSTOM PROPS */
 :root {
   --body-bg: #f1f4ff;
@@ -43,6 +46,7 @@
   --text-color: #000;
 }
 
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -50,11 +54,13 @@ html {
   scroll-behavior: smooth;
 }
 
+
 *,
 *::before ,
 *::after {
   box-sizing: inherit;
 }
+
 
 body {
   display: flex;
@@ -62,12 +68,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family:'Inter', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: var(--body-bg);
   color: var(--text-color);
 }
+
 
 img {
   max-width: 100%;
@@ -78,14 +85,17 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1192px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
